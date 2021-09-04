@@ -2,18 +2,22 @@ from flask.json import jsonify
 from flask import Flask,request,app
 from flask import Flask,request
 
+#function to sum two numbers.
 def sum(number1,number2):
     result= number1+number2
     return result
 
+#function to substract two number
 def sub(number1,number2):
     result= number1-number2
     return result
 
+#function to multiply two number
 def mul(number1,number2):
     result= number1*number2
     return result
 
+#function to divide two number
 def div(number1,number2):
     result= number1/number2
     return result
