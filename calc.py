@@ -9,6 +9,7 @@ def sum(number1,number2):
 def sub(number1,number2):
     result= number1-number2
     return result
+
 def mul(number1,number2):
     result= number1*number2
     return result
@@ -18,9 +19,9 @@ def div(number1,number2):
     return result
 
 app=Flask(__name__)
+
 @app.route('/sum',methods=['POST','GET'])
 def main():
-
     number1=int(request.form.get('number1'))
     number2=int(request.form.get('number2'))
     result=sum(number1,number2)
